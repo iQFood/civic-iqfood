@@ -2,7 +2,7 @@ body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   /* overflow: hidden; */
-    overflow-style: none;  
+    /* overflow-style: none;   */
 }
 
 ::-webkit-scrollbar {
@@ -343,6 +343,10 @@ p{
 
 /* Item Page - START */
 
+#item-page{
+  overflow: hidden !important;
+}
+
 .product-page-1st-row{
   display: flex;
   width: 90%;
@@ -647,4 +651,41 @@ padding-top: 35px;
 
 .team-member p {
   color: #888;
+}
+
+/* USER DASHBOARD - START */
+
+#dashboard-list-form{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 0px 30px;
+}
+#dashboard-list-form-label{
+  font-size: larger;
+}
+#listName{
+    /* scale: 1.5; */
+    border-color: grey;
+    border-radius: 5px;
+    border-style: revert;
+    margin-top: 10px;
+  
+
+}
+#dashboard-list-form-submit{
+
+}
+
+#userDash-user{
+  color: white;
+  background-image: url('./media/black.png');
+  margin-top: 10px;
+  padding: 10px 50px;
+  border-radius: 15px;
+}
+
+#userDash-logout-button{
+  color: rgb(62, 62, 62);
+  border: rgb(148, 148, 148) solid 1px
 }

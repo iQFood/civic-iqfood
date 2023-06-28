@@ -33,10 +33,10 @@ export default function CreateGroceryForm() {
     }
     console.log(inputValue)
 
-  return <form onSubmit={handleCreate}>
-    <label htmlFor="listName">Name Your New Grocery List</label>
+  return <form id="dashboard-list-form" onSubmit={handleCreate}>
+    <label id="dashboard-list-form-label" htmlFor="listName"> <h3>Name Your New Grocery List</h3></label>
     <input type = "text" id="listName" name="listName" value={inputValue} onChange={handleChange}/>
 
-    <button>Create</button>
+    <button id="dashboard-list-form-submit">Create</button>
   </form>
 }
