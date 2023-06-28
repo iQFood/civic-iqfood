@@ -7,7 +7,8 @@ import { useContext } from "react";
 
 export default function ProductInGroceryList({ props }) {
   const navigate = useNavigate();
-  const {setRemoveItem} = useContext(ProductContext);
+  const {setRemoveItem, setProductItem} = useContext(ProductContext);
+  // setProductItem(props);
 
   console.log(props);
   const handleRemoveItem = async() => {

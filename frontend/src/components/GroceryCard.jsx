@@ -9,36 +9,41 @@ export default function GroceryCard({ grocery }) {
   const formattedTime = dateTime.toLocaleTimeString();
   const navigate = useNavigate();
   const { id } = useParams();
-  const { setRemoveButton, setRecommendation, recommendation } =
+  const { setRemoveButton } =
     useContext(ProductContext);
   const [imgs, setImgs] = useState([]);
-  const [recomItem, setRecomItem] = useState(null);
+  // const [recomItem, setRecomItem] = useState([]);
 
-  function getRandomIndex(array) {
-    const length = array.length;
-    const randomIndex = Math.floor(Math.random() * length);
-    return randomIndex;
-  }
-  const handleRecommendation = async () => {
-    setRecommendation(true);
-    try {
-      const res = await fetchHandler(
-        `/api/grocerylist/${grocery.grocery_list_id}/rec`,
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      const randomIndex = getRandomIndex(res);
-      console.log(res[randomIndex])
-      setRecomItem(res[randomIndex]);
-    } catch (err) {
-      console.log(err);
-      return null;
-    }
-  };
+  // function shuffleArray(array) {
+  //   const newArray = [...array]; // Create a new array to avoid modifying the original array
+  //   for (let i = newArray.length - 1; i > 0; i--) {
+  //     const j = Math.floor(Math.random() * (i + 1));
+  //     [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  //   }
+  //   return newArray;
+  // }
+
+  // const handleRecommendation = async () => {
+  //   setRecommendation(true);
+  //   console.log(grocery.grocery_list_id);
+
+  //   try {
+  //     const res = await fetchHandler(
+  //       `/api/grocerylist/${grocery.grocery_list_id}/rec`,
+  //       {
+  //         method: "GET",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //       }
+  //     );
+  //     console.log(res)
+  //     setRecomItem(shuffleArray(res[0]));
+  //   } catch (err) {
+  //     console.log(err);
+  //     return null;
+  //   }
+  // };
   const handleRemoveGroceryList = async () => {
     setRemoveButton(true);
     try {
@@ -76,10 +81,11 @@ export default function GroceryCard({ grocery }) {
       }
     };
     imgPerGroceryList();
-  }, [recommendation]);
+  }, []);
 
-  console.log("Recommendation", recomItem);
-  console.log(recomItem)
+  // console.log("Recommendation", recomItem);
+  // console.log(typeof recomItem)
+  // console.log(recomItem[0])
   // console.log(recomItem[0].image_front_thumb_url)
   return (
     <>
@@ -129,9 +135,9 @@ export default function GroceryCard({ grocery }) {
             </div>
           </div>
         </div>
-        <button className="ui button fluid" onClick={handleRecommendation}>
+        {/* <button className="ui button fluid" onClick={handleRecommendation}>
           Recommendation
-        </button>
+        </button> */}
         <button
           className="ui button fluid"
           onClick={() => {
@@ -144,7 +150,7 @@ export default function GroceryCard({ grocery }) {
           Remove
         </button>
       </div>
-      {recomItem && (
+      {/* {recomItem[0] && (
         <div className="ui card">
           <div className="image">
             <img src={recomItem[0].image_front_thumb_url} />
@@ -164,7 +170,7 @@ export default function GroceryCard({ grocery }) {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 }

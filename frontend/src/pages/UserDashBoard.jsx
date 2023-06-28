@@ -22,9 +22,6 @@ export default function UserPage() {
     setRemoveButton,
     addButton,
     setAddButton,
-    recommendation,
-    setRecommendation,
-    recomItem,
   } = useContext(ProductContext);
 
   const loadUser = async () => {
@@ -57,9 +54,9 @@ export default function UserPage() {
     if (addButton) {
       setAddButton(false);
     }
-    if (recommendation) {
-      setRecommendation(false);
-    }
+    // if (recommendation) {
+    //   setRecommendation(false);
+    // }
     const loadInfoUser = async () => {
       try {
         await loadUser();
@@ -70,7 +67,7 @@ export default function UserPage() {
       }
     };
     loadInfoUser();
-  }, [id, removeButton, addButton, recommendation]);
+  }, [id, removeButton, addButton]);
   // id
 
   const handleLogout = async () => {
