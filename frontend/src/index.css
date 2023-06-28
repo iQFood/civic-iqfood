@@ -659,25 +659,43 @@ padding-top: 35px;
   display: flex;
   flex-direction: column;
   width: 80%;
-  padding: 0px 30px;
+  padding: 0px 5rem;
+  border: 0px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:10%;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 #dashboard-list-form-label{
   font-size: larger;
+  background-image: url('./media/white.png');
+  padding: 10px 20px;
+  border-radius: 10px;
+  scale: 1.2;
+  margin-bottom:3%
 }
 #listName{
-    /* scale: 1.5; */
-    border-color: grey;
-    border-radius: 5px;
-    border-style: revert;
-    margin-top: 10px;
-  
-
+  /* scale: 1.5; */
+  border-color: grey;
+  border-radius: 5px;
+  border-style: revert;
+  margin-top: 10px;
+  height: 30px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 #dashboard-list-form-submit{
-
+  width: 50%;
+  background-color: white;
+  color: #434343;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+
+/* User Dashboard - USER*/
+
+
 #userDash-user{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: white;
   background-image: url('./media/black.png');
   margin-top: 10px;
@@ -686,6 +704,7 @@ padding-top: 35px;
 }
 
 #userDash-logout-button{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: rgb(62, 62, 62);
   border: rgb(148, 148, 148) solid 1px
 }
