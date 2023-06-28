@@ -1,3 +1,6 @@
+import Luis from "../media/luis.jpg";
+import Xhes from "../media/xhes.jpg";
+
 export default function AboutUs() {
   return <>
   <div id = "mainAB">
@@ -16,12 +19,12 @@ export default function AboutUs() {
       <h1 id = "teamTitle">MEET OUR TEAM</h1>
       <div class="team-container">
         <div class="team-member">
-          <img src="pic_trulli.jpg" alt=""></img>
+          <img src={Luis} alt=""></img>
          <h3>Luis Cordero</h3>
           <p>Product Manger & Developer</p>
         </div>
         <div class="team-member">
-          <img src="pic_trulli.jpg" alt=""></img>
+          <img src={Xhes} alt=""></img>
           <h3>Xhesika Ma</h3>
           <p>Scrum Master & Developer</p>
         </div>

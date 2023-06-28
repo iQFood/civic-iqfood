@@ -1,8 +1,8 @@
-import NutriGradeA from "../media/scores/nutriscore-a.svg";
-import NutriGradeB from "../media/scores/nutriscore-b.svg";
-import NutriGradeC from "../media/scores/nutriscore-c.svg";
-import NutriGradeD from "../media/scores/nutriscore-d.svg";
-import NutriGradeE from "../media/scores/nutriscore-e.svg";
+import NutriGradeA from "../media/scores/nutriA.png";
+import NutriGradeB from "../media/scores/nutriB.png";
+import NutriGradeC from "../media/scores/nutriC.png";
+import NutriGradeD from "../media/scores/nutriD.png";
+import NutriGradeE from "../media/scores/nutriE.png";
 import NutriNotApplicable from "../media/scores/nutriscore-not-applicable.svg";
 
 export default function NutriScoreGrade({ props: nutriGrade }) {
