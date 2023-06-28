@@ -37,6 +37,6 @@ export default function CreateGroceryForm() {
     <label id="dashboard-list-form-label" htmlFor="listName"> <h3>Name Your New Grocery List</h3></label>
     <input type = "text" id="listName" name="listName" value={inputValue} onChange={handleChange}/>
 
-    <button id="dashboard-list-form-submit">Create</button>
+    <button id="dashboard-list-form-submit" className='ui button'>Create</button>
   </form>
 }
