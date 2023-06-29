@@ -25,13 +25,13 @@ export default function SiteHeadingAndNav() {
         <ul>
           {currentUser ? (
             <>
-              <li>
-                <NavLink to="/users/search">Home</NavLink>
-              </li>
-              <li>
+              <li  className="nav-li" id="nav-left">
+                <NavLink to="/users/search">Search</NavLink>
+              </li >
+              <li className="nav-li" id="nav-mid">
                 <NavLink to={`/users/${currentUser.id}`}>DashBoard</NavLink>
               </li>
-              <li>
+              <li className="nav-li" id="nav-right">
                 <NavLink to="/aboutus" end={true}>
                   About
                 </NavLink>
@@ -39,13 +39,13 @@ export default function SiteHeadingAndNav() {
             </>
           ) : (
             <>
-              <li>
+              <li className="nav-li" id="nav-left">
                 <NavLink to="/">Home</NavLink>
               </li>
-              <li>
+              <li className="nav-li" id="nav-mid">
                 <NavLink to="/login">Login</NavLink>
               </li>
-              <li>
+              <li className="nav-li" id="nav-right">
                 <NavLink to="/sign-up">Sign Up</NavLink>
               </li>
             </>

@@ -12,10 +12,110 @@ body {
 
 
 
+
+
+
+/* NAV BAR - START */
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #2c6e49 ;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+}
+
+#logo{
+  height:100px;
+}
+
+#title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  color: #FFF;
+}
+
+nav ul {
+  color:white;
+  display: flex;
+  background-size: cover;
+  /* gap: 4.5rem; */
+  
+  margin: 0;
+  list-style: none;
+  border-radius: 15px;
+}
+
+#nav-left{
+  padding: 20px 40px;
+  /* border-radius: 15px; */
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #4c956c;
+
+}#nav-left:hover{
+  background-color:#6bb189;
+  scale: 1.1;
+}
+
+#nav-mid{
+  padding: 1rem 5rem;
+  background-color: #4c956c;
+
+
+}#nav-mid:hover{
+  background-color:#6bb189;
+  scale: 1.1;
+}
+
+#nav-right{
+  padding: 30px 40px;
+  background-color: #4c956c;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}#nav-right:hover{
+  background-color:#6bb189;
+  scale: 1.1;
+}
+
+
+.nav-li{
+  width: 15rem;
+  /* height:auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  color: #FFF;
+}nav a:hover{
+  color:#434343
+}
+
+
+/* NAV BAR - END */
+
+
+
+
+
+
 /*  */
 
 .page-bg{
-  background-image: url('./media/green.png');
+  background-color: #fefee3;
   height: 90rem;
   display: flex;
   flex-direction: column;
@@ -42,47 +142,7 @@ input {
   margin-bottom: 1rem;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  background-image:  url("./media/black.png") ;
-}
 
-.brand{
-  display: flex;
-  align-items: center;
-}
-
-#logo{
-  height:100px;
-}
-
-#title {
-  font-size: 4.5rem;
-  font-weight: bold;
-  font-style: normal;
-  text-decoration: none;
-  color: #FFF;
-}
-
-nav ul {
-  color:white;
-  display: flex;
-  background-image: url('./media/yellow.png');
-  background-size: cover;
-  gap: 4.5rem;
-  padding: 20px 40px;
-  margin: 0;
-  list-style: none;
-  border-radius: 15px;
-}
-
-nav a {
-  display: block;
-  color: #FFF;
-}
 
 form {
   padding: 1rem;
@@ -551,26 +611,132 @@ p{
 
 
 
-
 /* Item Page - END */
+
+
+
+
+
+
+
 
 
 /* User Dashboard - START */
 #userDash-head{
   display: flex;
-  background-image: url('./media/brown.png');
+  background-color: #6c9c81;
   background-size: 50%;
   margin-top: 2%;
   border-radius: 15px;
+  border: 1px solid grey;
 }
 
 #userDash-head-user{
-  background-image: url('./media/white.png');
+  background-color:#4c956c;
   border-radius: 15px;
   display:flex;
   flex-direction: column;
   align-items: center;
 }
+
+
+
+
+/* USER DASHBOARD - Grocery */
+
+#dashboard-list-form{
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+  padding: 0px 5rem;
+  border: 0px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:10%;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+#dashboard-list-form-label{
+  font-size: larger;
+  background-color: #6c9c81;
+  padding: 10px 20px;
+  border-radius: 10px;
+  scale: 1.2;
+  margin-bottom:3%
+}
+#listName{
+  /* scale: 1.5; */
+  border-color: grey;
+  border-radius: 5px;
+  border-style: revert;
+  margin-top: 10px;
+  height: 30px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+#dashboard-list-form-submit{
+  width: 50%;
+  background-color: white;
+  color: #434343;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+/* User Dashboard - USER*/
+
+
+#userDash-user{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #3a3838;
+  background-color: #fefee3;
+  margin-top: 10px;
+  padding: 10px 50px;
+  border-radius: 15px;
+}
+
+#userDash-logout-button{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: black;
+  background-color: white;
+  /* border: rgb(148, 148, 148) solid 1px */
+}
+
+
+/* USER DASHBOARD - UPDATE */
+
+
+#username-update{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0px;
+}
+
+#username-update-label{
+  font-size: larger;
+  background-color: #4c956c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  scale: 1.2;
+  /* margin-bottom:3% */
+}
+
+#username{
+  border-color: grey;
+  border-radius: 5px;
+  border-style: revert;
+  margin-top: 10px;
+  height: 30px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#username-update-submit{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgb(62, 62, 62);
+  background-color: white ;
+}
+
+
+/* USER DASHBOARD - LISTS */
 
 
 #grocery-card{
@@ -590,6 +756,92 @@ p{
   flex-direction: column;
   align-items: center;
 }
+
+
+
+
+
+
+
+
+/* GROCERY CART - START */
+
+#grocery-list-page{
+  height: 110rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#grocery-cart-card{
+
+}
+
+.grocery-cart-image{
+  max-width: 90%;
+  height: 250px;
+  padding: 10%;
+}
+
+
+#grocery-cart-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grocery-cart-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#grocery-list-item-section{
+  margin-top: 3%;
+  margin-bottom:3%;
+  border-radius: 25px;
+  width: 80%;
+  /* height: 80%; */
+  background-color: #4c956c;
+  padding:3%
+}
+
+#grocery-cart-recommendation{
+  margin-bottom: 100px;
+  padding: 30px;
+  /* height: auto; */
+  /* background-color: red; */
+}
+
+#grocery-cart-recommendation-image{
+  max-height:200px;
+  object-fit: contain;
+  background-color: white;
+  border:none;
+  padding: 3%;
+}
+
+#grocery-cart-recommendation-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* GROCERY CART - END */
+
+
+
+
+
+
+
+
+
+
+
 #mainAB{
   display:grid;
   justify-content: space-evenly;
@@ -652,174 +904,3 @@ padding-top: 35px;
 .team-member p {
   color: #888;
 }
-
-/* USER DASHBOARD - START */
-
-#dashboard-list-form{
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  padding: 0px 5rem;
-  border: 0px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom:10%;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-#dashboard-list-form-label{
-  font-size: larger;
-  background-image: url('./media/white.png');
-  padding: 10px 20px;
-  border-radius: 10px;
-  scale: 1.2;
-  margin-bottom:3%
-}
-#listName{
-  /* scale: 1.5; */
-  border-color: grey;
-  border-radius: 5px;
-  border-style: revert;
-  margin-top: 10px;
-  height: 30px;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-#dashboard-list-form-submit{
-  width: 50%;
-  background-color: white;
-  color: #434343;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
-
-/* User Dashboard - USER*/
-
-
-#userDash-user{
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: white;
-  background-image: url('./media/black.png');
-  margin-top: 10px;
-  padding: 10px 50px;
-  border-radius: 15px;
-}
-
-#userDash-logout-button{
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: rgb(62, 62, 62);
-  border: rgb(148, 148, 148) solid 1px
-}
-
-
-/* USER DASHBOARD - UPDATE */
-
-
-#username-update{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 0px;
-}
-
-#username-update-label{
-  font-size: larger;
-  background-image: url('./media/white.png');
-  padding: 10px 20px;
-  border-radius: 10px;
-  scale: 1.2;
-  /* margin-bottom:3% */
-}
-
-#username{
-  border-color: grey;
-  border-radius: 5px;
-  border-style: revert;
-  margin-top: 10px;
-  height: 30px;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-
-#username-update-submit{
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: rgb(62, 62, 62);
-  border: rgb(148, 148, 148) solid 1px
-}
-
-
-
-
-
-
-
-
-
-
-
-/* GROCERY CART - START */
-
-#grocery-list-page{
-  background-image: url('./media/green.png');
-  height: 110rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#grocery-cart-card{
-
-}
-
-.grocery-cart-image{
-  max-width: 90%;
-  height: 250px;
-  padding: 5%;
-}
-
-
-#grocery-cart-info{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.grocery-cart-info{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-}
-
-#grocery-list-item-section{
-  margin-top: 3%;
-  margin-bottom:3%;
-  border-radius: 25px;
-  width: 80%;
-  /* height: 80%; */
-  background-image: url('./media/brown.png');
-  background-size: cover;
-  padding:3%
-}
-
-#grocery-cart-recommendation{
-  margin-bottom: 100px;
-  padding: 30px;
-  /* height: auto; */
-  /* background-color: red; */
-}
-
-#grocery-cart-recommendation-image{
-  max-height:200px;
-  object-fit: contain;
-  background-color: white;
-  border:none;
-  padding: 3%;
-}
-
-#grocery-cart-recommendation-info{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-/* GROCERY CART - END */
