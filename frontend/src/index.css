@@ -5,6 +5,11 @@ body {
     /* overflow-style: none;   */
 }
 
+#root{
+  background-color: #fefee3
+
+}
+
 main{
   background-color: #fefee3;
 }
@@ -772,6 +777,7 @@ main{
   background-size: 50%;
   margin-top: 2%;
   border-radius: 15px;
+  color: #fefee3;
   border: 1px solid grey;
 }
 
@@ -820,7 +826,7 @@ main{
 #dashboard-list-form-submit{
   width: 50%;
   background-color: white;
-  color: #434343;
+  color: #2C6E49;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -830,7 +836,7 @@ main{
 
 #userDash-user{
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #3a3838;
+  color: #4c956c;
   background-color: white;
   margin-top: 10px;
   padding: 10px 50px;
@@ -839,7 +845,7 @@ main{
 
 #userDash-logout-button{
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: black;
+  color: #2C6E49;
   background-color: white;
   /* border: rgb(148, 148, 148) solid 1px */
 }
@@ -875,7 +881,7 @@ main{
 
 #username-update-submit{
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: rgb(62, 62, 62);
+  color: #2C6E49;
   background-color: white ;
 }
 
@@ -890,10 +896,18 @@ main{
 }
 
 #grocery-list-name{
+  color: #2C6E49;
   text-align:center;
+  font-size: 30px;
   /* padding: 2rem 4rem; */
-  margin-top: -3rem;
+  margin-top: -3.5rem;
    /* border-bottom: 0px; */
+}
+
+#time-created{
+  /* align-self: center; */
+  text-align: center;
+  color: #2C6E49;
 }
 
 .grocery-preview-image{

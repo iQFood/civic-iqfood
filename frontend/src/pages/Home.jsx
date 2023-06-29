@@ -1,16 +1,22 @@
 import running from "../media/home-run.png";
 import cherry from "../media/home-cherry.png";
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import CurrentUserContext from "../contexts/current-user-context";
 
 export default function HomePage() {
+  const { currentUser } = useContext(CurrentUserContext);
+
   return (
     <>
       <div className="home-1">
         <div id="home-first-left">
+
           <h1 className="moto-text">
             Lets make smarter and healthier food choices together!
           </h1>
-          <div>
+          {currentUser ? (false) : (
+            <div>
             <NavLink className="home-1-butt" to="/login" end={true}>
               Login
             </NavLink>
@@ -18,6 +24,8 @@ export default function HomePage() {
               Sign Up
             </NavLink>
           </div>
+          )} 
+
         </div>
 
         <div id="home-first-right">
