@@ -1,5 +1,7 @@
 import running from "../media/home-run.png";
 import cherry from "../media/home-cherry.png";
+import { NavLink } from "react-router-dom";
+
 
 export default function HomePage() {
   return (
@@ -9,8 +11,13 @@ export default function HomePage() {
           <h1 className="moto-text">
             Lets make smarter and healthier food choices together!
           </h1>
-          <div id="story-div">
-            <p>Just eat healthy or ill crawl from under your bed at night...</p>
+          <div>
+            <NavLink className="home-1-butt" to="/login" end={true}>
+                  Login
+            </NavLink>
+            <NavLink className="home-1-butt" to="/sign-up" end={true}>
+                  Sign Up
+            </NavLink>           
           </div>
         </div>
 
@@ -25,15 +32,16 @@ export default function HomePage() {
         <div id="home-2-div">
           <div id="home-page-2-desc">
             {" "}
-            <h2>
+            <h2 className="home-2-desc-text">
               The Nova Score is a ranking system that classifies foods based on
               their level of processing.
-              <br />
-              It helps people understand the degree of processing in food
+            </h2>
+            <h2 className="home-2-desc-text">
+            It helps people understand the degree of processing in food
               products so they can choose more nutritious options and be aware
               of the potential health effects of highly processed foods.
             </h2>
-            <h2>
+            <h2 className="home-2-desc-text">
               Ultra-processed foods, like packaged snacks and ready-to-eat
               meals, which are highly processed and often contain unhealthy
               additives, sugars, and fats.
