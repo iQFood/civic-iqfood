@@ -1,6 +1,6 @@
 # iQFood
 
-> iQFood is a platform created in response to the numerous reports of individuals who have digestive issues that ultimately lead to cancer and a greater risk of passing away.
+
 
 ## Team
 
