@@ -27,7 +27,7 @@ export default function AboutUs() {
         </div>
         <div class="team-member">
           <img src={Xhes} alt=""></img>
-          <h3>Xhesika Ma</h3>
+          <h3>Xhesika Malecaj</h3>
           <p>Scrum Master & Developer</p>
         </div>
         <div class="team-member">
