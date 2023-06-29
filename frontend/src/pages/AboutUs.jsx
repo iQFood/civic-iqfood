@@ -1,6 +1,7 @@
 import Luis from "../media/luis.jpg";
 import Xhes from "../media/xhes.jpg";
 import Arly from "../media/arly.jpg";
+import Isaac from "../media/isaac.jpg";
 
 export default function AboutUs() {
   return <>
@@ -30,7 +31,7 @@ export default function AboutUs() {
           <p>Scrum Master & Developer</p>
         </div>
         <div class="team-member">
-          <img src="pic_trulli.jpg" alt=""></img>
+          <img src={Isaac} alt=""></img>
           <h3>Isaac Sagesse</h3>
           <p>Designer & Front-end Developer</p>
         </div>
