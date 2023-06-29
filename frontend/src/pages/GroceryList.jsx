@@ -116,7 +116,7 @@ export default function GroceryList() {
   // )
 
   return (
-    <body id="grocery-list-page">
+    <div id="grocery-list-page">
       {/* <div className="page-bg"> */}
 
       {/* <h1>GroceryList</h1> */}
@@ -149,46 +149,42 @@ export default function GroceryList() {
           Recommendation
         </button>
       </div>
-      {toggleRecommendation ? (
-        <>
-          {recomItem[0] && (
-            <div id="grocery-cart-recommendation" className="ui card">
-              {/* <div id="grocery-cart-recommendation-image" className="image"> */}
-              <img
-                id="grocery-cart-recommendation-image"
-                src={recomItem[0].image_front_thumb_url}
-              />
-              {/* </div> */}
-              <div className="content">
-                <div id="grocery-cart-recommendation-info" className="meta">
-                  <span>
-                    <i className="icon-nutri-score" />
-                    {recomItem[0].nutriscore_grade}
-                    <NutriScoreGrade props={recomItem[0].nutriscore_grade} />
-                  </span>
+      {recomItem[0] && toggleRecommendation && (
+        <div id="grocery-cart-recommendation" className="ui card">
+          {/* <div id="grocery-cart-recommendation-image" className="image"> */}
+          <img
+            id="grocery-cart-recommendation-image"
+            src={recomItem[0].image_front_thumb_url}
+          />
+          {/* </div> */}
+          <div className="content">
+            <div id="grocery-cart-recommendation-info" className="meta">
+              <span>
+                <i className="icon-nutri-score" />
+                {recomItem[0].nutriscore_grade}
+                <NutriScoreGrade props={recomItem[0].nutriscore_grade} />
+              </span>
 
-                  <span>
-                    <i className="icon-nova-score" />
-                    {recomItem[0].nova_group}
-                    <NovaScore props={recomItem[0].nova_group} />
-                  </span>
-                </div>
-              </div>
-              <div>
-                <button
-                  className="ui button fluid"
-                  onClick={() => {
-                    setToggleRecommendation(!toggleRecommendation);
-                    handleAddRecommendation(itemList[0].grocery_list_id);
-                  }}
-                >
-                  Add
-                </button>
-              </div>
+              <span>
+                <i className="icon-nova-score" />
+                {recomItem[0].nova_group}
+                <NovaScore props={recomItem[0].nova_group} />
+              </span>
             </div>
-          )}
-        </>
-      ) : null}
-    </body>
+          </div>
+          <div>
+            <button
+              className="ui button fluid"
+              onClick={() => {
+                setToggleRecommendation(!toggleRecommendation);
+                handleAddRecommendation(itemList[0].grocery_list_id);
+              }}
+            >
+              Add
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
