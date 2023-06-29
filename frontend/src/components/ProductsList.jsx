@@ -1,14 +1,17 @@
 import { useContext } from "react";
 import ProductContext from "../contexts/ProductContext";
 import ProductCard from "./ProductCard";
+import LoadingPage from "../pages/LoadingPage";
 
 export default function ProductsList() {
-  const { products, setPage, page } = useContext(ProductContext);
+  const { products, setPage, page, loading } = useContext(ProductContext);
   console.log(products);
   const handlerNextPage = () => setPage(page + 1);
   const handlerPreviousPage = () => {
     if (page > 1) setPage(page - 1);
   };
+
+  if (loading) return <LoadingPage />;
 
   return (
     <>

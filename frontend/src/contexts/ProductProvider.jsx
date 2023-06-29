@@ -10,10 +10,12 @@ function ProductContextProvider({ children }) {
   const [removeItem, setRemoveItem] = useState(false);
   const [recommendation, setRecommendation] = useState(false);
   const [product, setProductItem] = useState({});
+  const [loading, setLoading] = useState(false);
   // console.log(products.length)
 
   useEffect(() => {
     async function fetchApi() {
+      setLoading(true);
       try {
         const res = await fetch(
           `https://world.openfoodfacts.org/cgi/search.pl?search_terms=${query}&page=${page}&page_size=6&json=true`
@@ -26,6 +28,7 @@ function ProductContextProvider({ children }) {
           console.log("yoo", p);
         });
         setProduct(data.products);
+        setLoading(false);
         console.log(products);
       } catch (err) {
         console.log(err);
@@ -52,6 +55,8 @@ function ProductContextProvider({ children }) {
     setRecommendation,
     product,
     setProductItem,
+    loading,
+    setLoading,
   };
 
   return (
