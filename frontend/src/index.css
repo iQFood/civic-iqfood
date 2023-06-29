@@ -166,7 +166,7 @@ nav a {
 .home-1{
   margin-top: 0px;
   height: 100%;
-  width: auto;
+  /* width: auto; */
   background-color: #CBCBB9;
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,15 +179,29 @@ nav a {
 .home-2{
   margin-top: 0px;
   height: 100%;
-  width: auto;
+  /* width: auto; */
+  color: white;
   background-color: #56765B;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
+
+
+
+
+#home-nova-list{
+  width: 30%;
+  display:flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: spac;
+}
+
+
 
 .home-3{
   margin-top: 0px;
