@@ -26,7 +26,7 @@ export default function HomePage() {
       </div>
 
       <div div className="home-2">
-        <h1 className="moto-text"> What is a NOVA Score</h1>
+        <h1 className="home-2-text"> What is a NOVA Score</h1>
 
         <div id="home-2-div">
           <div id="home-page-2-desc">

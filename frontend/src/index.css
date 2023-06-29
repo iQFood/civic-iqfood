@@ -158,7 +158,16 @@ nav a {
   text-align: center;
   font-size: 60px;
   font-weight: 700;
+  color: #2c6e49;
 }
+.home-2-text{
+  margin-top: 0px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  /* color: #2c6e49; */
+}
+
 
 #home-first-right{
   display: flex;
