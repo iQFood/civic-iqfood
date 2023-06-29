@@ -116,7 +116,7 @@ export default function GroceryList() {
   // )
 
   return (
-    <body id="grocery-list-page">
+    <div id="grocery-list-page">
       {/* <div className="page-bg"> */}
 
       {/* <h1>GroceryList</h1> */}
@@ -189,6 +189,6 @@ export default function GroceryList() {
           )}
         </>
       ) : null}
-    </body>
+    </div>
   );
 }
