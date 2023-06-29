@@ -8,6 +8,7 @@ import Additives from "../components/Additives";
 import NutriScoreGrade from "../components/NutriScoreGrade";
 import NovaScore from "../components/NovaScore";
 import MissingImgItem from "../components/MissingImgItem";
+import LoadingPage from "./LoadingPage";
 
 export default function Item() {
   const { id } = useParams();
@@ -114,11 +115,12 @@ export default function Item() {
   // console.log(option);
   console.log(curProduct);
 
-  if (loading) return <h1>Loading...</h1>;
+  if (loading) return <LoadingPage />;
 
   if (!curProduct) return <Page404 />;
 
   console.log(curProduct.stores.split(","));
+  console.log(option);
   // return <></>;
 
   return (
@@ -193,7 +195,7 @@ export default function Item() {
                 </option>
                 {option.map((opt, index) => (
                   <option id="product-list-select" key={index} value={opt.grocery_list_id}>
-                    {opt.grocery_list_id}
+                    {opt.list_name}
                   </option>
                 ))}
               </select>

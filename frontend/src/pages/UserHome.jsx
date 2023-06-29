@@ -3,13 +3,15 @@ import ProductContext from "../contexts/ProductContext";
 import ProductsList from "../components/ProductsList";
 
 export default function Page404() {
-  const { setQuery } = useContext(ProductContext);
+  const { setQuery, loading } = useContext(ProductContext);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(e.target[0].value);
     setQuery(e.target[0].value);
   };
+
+  if(loading) return <h1>Loading...</h1>
 
   return (
     // <>
