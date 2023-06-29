@@ -785,12 +785,15 @@ main{
 
 #grocery-card{
   margin: 3rem 0rem 0rem 0rem;
-  
+  display: flex;
+  align-items: baseline;
 }
 
 .grocery-preview-image{
-  height: 10rem;
+  max-height: 10rem;
   align-self: center;
+  max-width: 15rem; 
+  padding: 1rem 0px;
   /* background-image: url('./media/black.png'); */
   /* padding: 1rem; */
 }
