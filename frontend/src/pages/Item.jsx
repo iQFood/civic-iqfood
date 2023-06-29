@@ -113,43 +113,11 @@ export default function Item() {
   }, []);
   // console.log(option);
   console.log(curProduct);
-  // console.log(additiveInfo);
-
-  // console.log(results);
-  // console.log(option);
-  // console.log(repeat);
-  // doFetch();
-  // console.log(additiveInfo);
-  // const curProduct = getProduct();
-
-  // console.log(results);
-  // console.log(additiveInfo);
-  // console.log(img);
-
-  // console.log("Name", name);
-  // console.log("Eco", ecoscore);
-  // console.log("Ingredient", ingredient);
-  // console.log("additives", additives);
-  // console.log("GATTTT", additives);
 
   if (loading) return <h1>Loading...</h1>;
 
   if (!curProduct) return <Page404 />;
 
-  // console.log(product);
-  // console.log( typeof product.product_name)
-  //   console.log(product.brands_tags[0]);
-  // console.log("Name:", name);
-  // console.log("EcoScore", ecoscore);
-  // console.log("Ingredients:", ingredient);
-  // console.log("Additives:", additives);
-  // console.log("Img:", img);
-  // console.log("Store:", store);
-  // console.log("Nutri", nutri);
-  // console.log("Nova", nova);
-  // console.log("Id", ID);
-  // //   console.log(product);
-  // console.log("Quantity:", product.quantity);
   console.log(curProduct.stores.split(","));
   // return <></>;
 
@@ -169,7 +137,7 @@ export default function Item() {
               <p id="stores-info">
                 <strong>Stores: </strong>
 
-                {curProduct.stores}
+                {curProduct.stores.split(',').join(', ')}
               </p>
 
               <div className="four wide column">

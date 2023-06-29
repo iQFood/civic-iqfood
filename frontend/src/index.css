@@ -14,8 +14,8 @@ body {
 /*  */
 
 .page-bg{
-  background-color: #fefee3;
-  height: 90rem;
+  background-color: white;
+  /* height: 90rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,6 +261,23 @@ nav a {
   justify-content: space-around;
 }
 
+#home-3-left{
+  display: flex;
+  justify-content: center;
+  width:40%;
+}
+
+#home-3-right{
+    /* align-self: start; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 40rem;
+    /* background-color: red; */
+    padding-right:3rem
+}
 
 p{
   font-weight: 700;
@@ -420,8 +437,7 @@ main{
   display: flex;
   flex-direction: column;
   /* background-color:; */
-  background-size: 50%;
-  height: 100em;
+  /* height: 100em; */
   /* border-radius: 15px; */
 }
 
@@ -802,7 +818,7 @@ main{
 #userDash-user{
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: #3a3838;
-  background-color: #fefee3;
+  background-color: white;
   margin-top: 10px;
   padding: 10px 50px;
   border-radius: 15px;
@@ -904,13 +920,24 @@ main{
 }
 
 #grocery-cart-card{
+/* display: flex;
+ justify-content: baseline; */
+/* justify-content: center; */
+}
 
+.imageCard{
+  height: 10rem
 }
 
 .grocery-cart-image{
   max-width: 90%;
-  height: 250px;
-  padding: 10%;
+  height: auto;
+  /* padding: 5%; */
+  max-height: 10rem;
+  margin: auto;
+  /* align-self: center; */ 
+  /* max-width: 15rem;  */
+  padding: 1rem 2rem;
 }
 
 
@@ -918,13 +945,13 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: end;
 }
 
 .grocery-cart-info{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
 
 #grocery-list-item-section{

@@ -2,7 +2,6 @@ import running from "../media/home-run.png";
 import cherry from "../media/home-cherry.png";
 import { NavLink } from "react-router-dom";
 
-
 export default function HomePage() {
   return (
     <>
@@ -13,11 +12,11 @@ export default function HomePage() {
           </h1>
           <div>
             <NavLink className="home-1-butt" to="/login" end={true}>
-                  Login
+              Login
             </NavLink>
             <NavLink className="home-1-butt" to="/sign-up" end={true}>
-                  Sign Up
-            </NavLink>           
+              Sign Up
+            </NavLink>
           </div>
         </div>
 
@@ -37,7 +36,7 @@ export default function HomePage() {
               their level of processing.
             </h2>
             <h2 className="home-2-desc-text">
-            It helps people understand the degree of processing in food
+              It helps people understand the degree of processing in food
               products so they can choose more nutritious options and be aware
               of the potential health effects of highly processed foods.
             </h2>
@@ -73,7 +72,15 @@ export default function HomePage() {
       </div>
 
       <div div className="home-3">
-        <h1>[Lorem Ipsum]</h1>
+        <div id="home-3-left">
+          <img className="home-img" src={cherry}></img>
+        </div>
+
+        <div id="home-3-right">
+          <h1 className="moto-text">
+            Lets make smarter and healthier food choices together!
+          </h1>
+        </div>
       </div>
     </>
   );
