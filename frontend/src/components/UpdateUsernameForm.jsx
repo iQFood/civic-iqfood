@@ -18,11 +18,11 @@ export default function UpdateUsernameForm({ currentUser, setCurrentUser }) {
     event.target.reset();
   };
 
-  return <form onSubmit={handleSubmit}>
-    <label htmlFor='username'>New Username</label>
+  return <form id="username-update" onSubmit={handleSubmit}>
+    <label id="username-update-label" htmlFor='username'>New Username</label>
     <input type='text' id='username' name='username'/>
     <input type="hidden" name="id" value={currentUser.id} />
 
-    <button>Update Username</button>
+    <button id="username-update-submit" className="ui button">Update Username</button>
   </form>;
 }

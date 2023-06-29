@@ -26,7 +26,7 @@ body {
   margin-top: 3%;
   border-radius: 25px;
   width: 80%;
-  height: 80%;
+  /* height: 80%; */
   background-image: url('./media/brown.png');
   background-size: cover;
 }
@@ -708,3 +708,118 @@ padding-top: 35px;
   color: rgb(62, 62, 62);
   border: rgb(148, 148, 148) solid 1px
 }
+
+
+/* USER DASHBOARD - UPDATE */
+
+
+#username-update{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0px;
+}
+
+#username-update-label{
+  font-size: larger;
+  background-image: url('./media/white.png');
+  padding: 10px 20px;
+  border-radius: 10px;
+  scale: 1.2;
+  /* margin-bottom:3% */
+}
+
+#username{
+  border-color: grey;
+  border-radius: 5px;
+  border-style: revert;
+  margin-top: 10px;
+  height: 30px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#username-update-submit{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgb(62, 62, 62);
+  border: rgb(148, 148, 148) solid 1px
+}
+
+
+
+
+
+
+
+
+
+
+
+/* GROCERY CART - START */
+
+#grocery-list-page{
+  background-image: url('./media/green.png');
+  height: 110rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#grocery-cart-card{
+
+}
+
+.grocery-cart-image{
+  max-width: 90%;
+  height: 250px;
+  padding: 5%;
+}
+
+
+#grocery-cart-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grocery-cart-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#grocery-list-item-section{
+  margin-top: 3%;
+  margin-bottom:3%;
+  border-radius: 25px;
+  width: 80%;
+  /* height: 80%; */
+  background-image: url('./media/brown.png');
+  background-size: cover;
+  padding:3%
+}
+
+#grocery-cart-recommendation{
+  margin-bottom: 100px;
+  padding: 30px;
+  /* height: auto; */
+  /* background-color: red; */
+}
+
+#grocery-cart-recommendation-image{
+  max-height:200px;
+  object-fit: contain;
+  background-color: white;
+  border:none;
+  padding: 3%;
+}
+
+#grocery-cart-recommendation-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* GROCERY CART - END */

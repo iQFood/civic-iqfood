@@ -29,20 +29,20 @@ export default function ProductInGroceryList({ props }) {
   
   return (
     <>
-      <div className="ui card">
+      <div id="grocery-cart-card" className="ui card">
         <div className="imageCard">
-          <img alt="oh no!" src={props.image_front_thumb_url} />
+          <img className="grocery-cart-image" alt="oh no!" src={props.image_front_thumb_url} />
         </div>
-        <div className="content">
+        <div id="grocery-cart-info" className="content">
           <div className="header">{`${props.product_name}`}</div>
-          <div className="meta">
+          <div className="meta grocery-cart-info">
             <span>
               {/* <i className="icon-nutri-score" />
               {props.nutriscore_grade} */}
               <NutriScoreGrade props={props.nutriscore_grade} />
             </span>
 
-            <span>
+            <span className="grocery-cart-info">
               {/* <i className="icon-nova-score" />
               {props.nova_groups} */}
               <NovaScore props={props.nova_groups} />

@@ -82,9 +82,11 @@ export default function GroceryList() {
 
 
   return (
-    <>
-      <h1>GroceryList</h1>
-      <div className="ui centered cards">
+    <body id="grocery-list-page" >
+    {/* <div className="page-bg"> */}
+
+      {/* <h1>GroceryList</h1> */}
+      <div id="grocery-list-item-section" className="ui centered cards">
         {itemList.map((product, i) => {
           return (
             <ProductInGroceryList
@@ -110,12 +112,12 @@ export default function GroceryList() {
         </button>
       </div>
       {recomItem[0] && (
-        <div className="ui card">
-          <div className="image">
-            <img src={recomItem[0].image_front_thumb_url} />
-          </div>
+        <div id="grocery-cart-recommendation" className="ui card">
+          {/* <div id="grocery-cart-recommendation-image" className="image"> */}
+            <img id="grocery-cart-recommendation-image" src={recomItem[0].image_front_thumb_url} />
+          {/* </div> */}
           <div className="content">
-            <div className="meta">
+            <div id="grocery-cart-recommendation-info" className="meta">
               <span>
                 <i className="icon-nutri-score" />
                 {recomItem[0].nutriscore_grade}
@@ -131,6 +133,6 @@ export default function GroceryList() {
           </div>
         </div>
       )}
-    </>
+    </body>
   );
 }
