@@ -92,7 +92,7 @@ export default function GroceryCard({ grocery }) {
       <div className="ui card">
         <div className="ui card">
           <div className="header">
-            <h3>{grocery.list_name}</h3>
+            <h3 id="grocery-list-name" >{grocery.list_name}</h3>
           </div>
           <div className="content">
             <h4>
@@ -115,25 +115,16 @@ export default function GroceryCard({ grocery }) {
               }
             })}
           </div>
-          <div className="content">
-            {/* {!grocery.product_name.includes("undefined") ?  (
-            <div className="header">{`${grocery.product_name}`}</div>
-            ) : (
-              <div className="header">{(grocery.product_name).replace("undefined", "")}</div>
-            )} */}
-            <div className="meta">
-              <span>
+            <div id="grocery-content" className="meta">
+              {/* <span>
                 <i className="icon-nutri-score" />
                 {grocery.nutri_score}
-              </span>
-
+              </span> */}
               <span>
                 <i className="icon-nova-score" />
-                {grocery.nova_rate}
                 <NovaScore props={grocery.nova_rate} />
               </span>
             </div>
-          </div>
         </div>
         {/* <button className="ui button fluid" onClick={handleRecommendation}>
           Recommendation
