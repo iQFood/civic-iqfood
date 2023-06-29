@@ -150,7 +150,7 @@ export default function Item() {
   // console.log("Id", ID);
   // //   console.log(product);
   // console.log("Quantity:", product.quantity);
-  console.log(curProduct.stores.split(','))
+  console.log(curProduct.stores.split(","));
   // return <></>;
   return (
     <div className="page-bg">
@@ -167,7 +167,7 @@ export default function Item() {
             <div className="product-page-1st-row">
               <p id="stores-info">
                 <strong>Stores: </strong>
-                
+
                 {curProduct.stores}
               </p>
 
@@ -204,26 +204,37 @@ export default function Item() {
 
             {/* Wrap this button component in a Link */}
 
-            <div id="product-page-bottons" >
-              <button id="product-back-button"
+            <div id="product-page-bottons">
+              <button
+                id="product-back-button"
                 className="ui button fluid"
                 onClick={() => navigate(`/users/search`)}
               >
                 Go Back
               </button>
-              <select className="button-hover" id="product-page-select-option"
+              <select
+                className="button-hover"
+                id="product-page-select-option"
                 value={selectedValue}
                 onChange={handleDropdownChange}
                 required
               >
-                <option value="">Select an option</option>
+                <option value="">
+                  Select an option
+                </option>
                 {option.map((opt, index) => (
-                  <option key={index} value={opt.grocery_list_id}>
+                  <option id="product-list-select" key={index} value={opt.grocery_list_id}>
                     {opt.grocery_list_id}
                   </option>
                 ))}
               </select>
-              <button id="product-add-button" className="ui button " onClick={handleButtonClick}>Add</button>
+              <button
+                id="product-add-button"
+                className="ui button "
+                onClick={handleButtonClick}
+              >
+                Add
+              </button>
             </div>
           </div>
         </div>

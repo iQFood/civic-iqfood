@@ -11,7 +11,23 @@ body {
 }
 
 
+/*  */
 
+.page-bg{
+  background-color: #fefee3;
+  height: 90rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-main{
+  margin-top: 3%;
+  border-radius: 25px;
+  width: 80%;
+  /* height: 80%; */
+  background-color: #4c956c;
+}
 
 
 
@@ -112,24 +128,7 @@ nav a {
 
 
 
-/*  */
 
-.page-bg{
-  background-color: #fefee3;
-  height: 90rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.page-main{
-  margin-top: 3%;
-  border-radius: 25px;
-  width: 80%;
-  /* height: 80%; */
-  background-image: url('./media/brown.png');
-  background-size: cover;
-}
 
 
 /* HOME PAGE - START */
@@ -301,7 +300,7 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('./media/green.png');
+  /* background-image: url('./media/green.png'); */
 }
 
 #search-food-form{
@@ -314,7 +313,7 @@ p{
 #search-food-area{
   display: flex;
   flex-direction: column;
-  background-image: url('./media/brown.png');
+  /* background-color:; */
   background-size: 50%;
   height: 100em;
   /* border-radius: 15px; */
@@ -322,7 +321,7 @@ p{
 
 #search-text{
   color: white;
-  background-image: url('./media/black.png');
+  background-color: #2c6e49;
   background-size: 200%;
   padding: 20px 200px;
   border-radius: 15px;
@@ -443,7 +442,7 @@ p{
 
 .item-page-product-name{
   color: white;
-  background-image: url('./media/black.png');
+  background-color: #2c6e49;
   padding: 30px 10px;
   border-radius: 15px;
   width: 50%;
@@ -496,14 +495,17 @@ p{
 
 #product-page-bottons{
   display: flex;
-  scale: 1.5;
-
-  /* width: 30rem; - Go back bottun takes up all open space
-  justify-content: space-around; */
+  gap: 3%;
+  width: 50%;
+  /* width: 30rem; - Go back bottun takes up all open space */
+  justify-content: space-around; 
+  margin-bottom: 3rem;
 }
 
 #product-back-button{
   background-color: rgb(112, 205, 182);
+  width: auto;
+  padding: 0rem 4rem;
 }#product-back-button:hover{
   scale: 1.2;
   background-color: rgb(79, 172, 148);
@@ -516,7 +518,12 @@ p{
   border-radius: 4px;
 }
 
+/* #product-list-select{
+  scale: 1.4;
+  background-color: #3a3838;
+} */
   /* #dropdown-options:hover{
+    product-list-select
   background-color: black
 }  */
 
@@ -524,6 +531,8 @@ p{
 #product-add-button{
   background-color: #66a653;
   margin-left: 1%;
+  width: 10rem;
+  padding: 0rem 4rem;
   /* scale: 1.2; */
   padding: 16px 20px;
   border: none;
@@ -840,6 +849,7 @@ p{
 
 
 
+/* ABOUT US PAGE - START */
 
 
 #mainAB{
@@ -904,3 +914,6 @@ padding-top: 35px;
 .team-member p {
   color: #888;
 }
+
+
+/* ABOUT US PAGE - END */
