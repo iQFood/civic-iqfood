@@ -52,7 +52,7 @@ iQFood is a place where the general public can be well-informed about the effect
 ![](iQFood-Technologies.jpg)
 
 ## ERD
-![]()
+![](iQFood-ERD.png)
 
 
 
