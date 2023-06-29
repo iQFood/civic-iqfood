@@ -1,5 +1,6 @@
 import Luis from "../media/luis.jpg";
 import Xhes from "../media/xhes.jpg";
+import Arly from "../media/arly.jpg";
 
 export default function AboutUs() {
   return <>
@@ -34,7 +35,7 @@ export default function AboutUs() {
           <p>Designer & Front-end Developer</p>
         </div>
         <div class="team-member">
-          <img src="pic_trulli.jpg" alt=""></img>
+          <img src={Arly} alt=""></img>
           <h3>Arly Raymundo</h3>
           <p>Back-end Developer</p>
         </div>
