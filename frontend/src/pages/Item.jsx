@@ -73,7 +73,7 @@ export default function Item() {
       );
       // console.log(product);
       const extractProperties = {
-        product_name: product.product_name,
+        product_name: product.product_name || "Product",
         quantity: product.quantity,
         ecoscore_grade: product.ecoscore_grade,
         ingredients_text: product.ingredients_text,
@@ -152,17 +152,18 @@ export default function Item() {
   // console.log("Quantity:", product.quantity);
   console.log(curProduct.stores.split(","));
   // return <></>;
+
   return (
     <div className="page-bg">
       <div className="page-main">
         <div className="ui two column centered grid">
-          <h1 className="item-page-product-name">
+          <div className="item-page-product-name">
             {curProduct.product_name ? (
-              <h2>{`${curProduct.product_name}-${curProduct.quantity}`}</h2>
+              <h1>{`${curProduct.product_name}-${curProduct.quantity}`}</h1>
             ) : (
-              <h2>{`${curProduct.brands_tags[0]}-${curProduct.quantity}`}</h2>
+              <h1>{`${curProduct.brands_tags[0]}-${curProduct.quantity}`}</h1>
             )}
-          </h1>
+          </div>
           <div className="row">
             <div className="product-page-1st-row">
               <p id="stores-info">

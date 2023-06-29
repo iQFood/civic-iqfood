@@ -16,7 +16,7 @@ export default function Page404() {
   };
 
   return (
-    <body id="Page404">
+    <div id="Page404">
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
@@ -33,6 +33,6 @@ export default function Page404() {
           Follow Mr. Broccoli{" "}
         </a>
       </div>
-    </body>
+    </div>
   );
 }
