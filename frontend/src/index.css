@@ -496,8 +496,8 @@ main{
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: whitesmoke;
-  border-color: grey;
+  background-color: white;
+  border-color: white;
   border-radius: 10px;
   border-style: double;
   cursor: pointer;
@@ -513,7 +513,7 @@ main{
   font-size: 16px;
   margin-right:10px;
 }
-.nextButton::before{
+.nextButton::after{
   content: "";
   display: inline-block;
   width: 50px;
@@ -521,7 +521,7 @@ main{
   background:url('../src/media/previousArrow.png') no-repeat center;
   background-size: contain;
   font-size: 16px;
-  margin-right:10px;
+  margin-left:10px;
   transform: rotateY(180deg);
 }
 .buttonNextPrev{

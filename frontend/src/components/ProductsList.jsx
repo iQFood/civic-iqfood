@@ -25,6 +25,7 @@ export default function ProductsList() {
         <button className="previousButton" onClick={handlerPreviousPage}>
           Previous
         </button>
+        
         <button className="nextButton" onClick={handlerNextPage}>
           Next
         </button>
