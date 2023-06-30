@@ -160,14 +160,10 @@ export default function GroceryList() {
           <div className="content">
             <div id="grocery-cart-recommendation-info" className="meta">
               <span>
-                <i className="icon-nutri-score" />
-                {recomItem[0].nutriscore_grade}
                 <NutriScoreGrade props={recomItem[0].nutriscore_grade} />
               </span>
 
               <span>
-                <i className="icon-nova-score" />
-                {recomItem[0].nova_group}
                 <NovaScore props={recomItem[0].nova_group} />
               </span>
             </div>
