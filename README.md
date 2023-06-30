@@ -6,7 +6,7 @@
 
   - __Product Owner__: Luis Cordero
   - __Scrum Master__: Xhesika Malecaj
-  - __Development Team Members__: Issac Sage, Arly Raymundo
+  - __Development Team Members__: Issac Sagesse, Arly Raymundo
 
 
 ### Getting Started
@@ -52,9 +52,23 @@ iQFood is a place where the general public can be well-informed about the effect
 ![](iQFood-Technologies.jpg)
 
 ## ERD
-
-
+![](iQFood-ERD.png)
 
 
 
 ## Key API Endpoints
+
+| endpoint | description | example |
+| - | - | - |
+| `/api//itemslist` | Get all possible item options | `GET /api/items` |
+| `/api/grocerylist/:id` | Get all possible grocery lists created by the users id | `GET /api/grocerylist/2` |
+| `/api/grocerylist/:userId` | Creates a new grocery list  | `POST /api/grocerylist/3` |
+| `/api/itemslist` | Creates a new item  | `POST /api/itemslist` |
+| `/api/itemslist/:id` | Updates an item  | `PATCH /api/itemslist/:id` |
+| `/api/grocerylist/:id` | Updates a grocery list  | `PATCH /api/grocerylist/:id` |
+| `/api/grocerylist/:id` | Deletes grocery list  | `DELETE /api/grocerylist/:id` |
+| `/api/grocerylist/:grocerylist_id/:item_id` | Deletes specific item in grocery list  | `DELETE /api/grocerylist/:grocerylist_id/:item_id` |
+
+
+
+
