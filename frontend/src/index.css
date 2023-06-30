@@ -511,7 +511,8 @@ main{
 #search-food-box input{
   /* scale: 1.5; */
   font-size: 35px;
-  border-color: grey;
+  color: #4c956c;
+  border-color: #4c956c;
   border-radius: 5px;
   border-style: revert;
   margin: 0px;
@@ -519,8 +520,9 @@ main{
 }
 #search-food-box button{
   padding: 15px;
-  background-color: whitesmoke;
-  border-color: grey;
+  background-color: white;
+  border-color: #2C6E49;
+  color: #2C6E49;
   border-style: double;
   border-radius: 10px;
   font-family: 'Nunito', sans-serif;
@@ -571,7 +573,6 @@ main{
   margin: 5vh;
 }
 /* UserHome - END*/
-
 
 
 
@@ -638,7 +639,33 @@ main{
   flex-direction: column-reverse;
 }
 
+select {
+  /* font-size: 16px; */
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 8px;
+  border: 1px solid #ccc;
+  display: flex;
+}
 
+select option {
+  font-size: 30px;
+  /* align-self: center; */
+  padding: 10rem;
+  background-color: #f2f2f2;
+  color: #333;
+}select option:hover{
+
+}
+
+.collapse-btn{
+  color: white;
+  background-color: #4c956c;
+  padding: 1rem 0.1rem;
+  border-radius: 15px;
+  /* width: 50%; */
+  margin-bottom: 1rem;
+}
 
 
 
@@ -657,8 +684,9 @@ main{
   background-color: white ;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 25rem;
-  /* height:20rem; */
+  max-height:15rem;
   padding:20px;
   border-radius: 15px;
 }
@@ -668,7 +696,6 @@ main{
   display: flex;
   flex-direction: column;
   width: 25rem;
-  /* height:20rem; */
   padding:20px;
   border-radius: 15px;
   margin-bottom: 15px;
@@ -684,13 +711,13 @@ main{
 }
 
 #product-back-button{
-  background-color: rgb(112, 205, 182);
+  background-color: #70cdb6;
   width: auto;
   padding: 0rem 4rem;
 }#product-back-button:hover{
   scale: 1.2;
   background-color: rgb(79, 172, 148);
-  /* color: white; */
+  color: white;
 }
 
 #product-page-select-option{
@@ -721,6 +748,7 @@ main{
 }#product-add-button:hover{  
   scale: 1.2;
   background-color: #4f8e3b;
+  color: white;
 }
 
 
