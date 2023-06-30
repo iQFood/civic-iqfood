@@ -8,6 +8,7 @@ import Additives from "../components/Additives";
 import NutriScoreGrade from "../components/NutriScoreGrade";
 import NovaScore from "../components/NovaScore";
 import MissingImgItem from "../components/MissingImgItem";
+import LoadingPage from "./LoadingPage";
 
 export default function Item() {
   const { id } = useParams();
@@ -73,7 +74,7 @@ export default function Item() {
       );
       // console.log(product);
       const extractProperties = {
-        product_name: product.product_name,
+        product_name: product.product_name || "Product",
         quantity: product.quantity,
         ecoscore_grade: product.ecoscore_grade,
         ingredients_text: product.ingredients_text,
@@ -113,62 +114,32 @@ export default function Item() {
   }, []);
   // console.log(option);
   console.log(curProduct);
-  // console.log(additiveInfo);
 
-  // console.log(results);
-  // console.log(option);
-  // console.log(repeat);
-  // doFetch();
-  // console.log(additiveInfo);
-  // const curProduct = getProduct();
-
-  // console.log(results);
-  // console.log(additiveInfo);
-  // console.log(img);
-
-  // console.log("Name", name);
-  // console.log("Eco", ecoscore);
-  // console.log("Ingredient", ingredient);
-  // console.log("additives", additives);
-  // console.log("GATTTT", additives);
-
-  if (loading) return <h1>Loading...</h1>;
+  if (loading) return <LoadingPage />;
 
   if (!curProduct) return <Page404 />;
 
-  // console.log(product);
-  // console.log( typeof product.product_name)
-  //   console.log(product.brands_tags[0]);
-  // console.log("Name:", name);
-  // console.log("EcoScore", ecoscore);
-  // console.log("Ingredients:", ingredient);
-  // console.log("Additives:", additives);
-  // console.log("Img:", img);
-  // console.log("Store:", store);
-  // console.log("Nutri", nutri);
-  // console.log("Nova", nova);
-  // console.log("Id", ID);
-  // //   console.log(product);
-  // console.log("Quantity:", product.quantity);
   console.log(curProduct.stores.split(","));
+  console.log(option);
   // return <></>;
+
   return (
     <div className="page-bg">
       <div className="page-main">
         <div className="ui two column centered grid">
-          <h1 className="item-page-product-name">
+          <div className="item-page-product-name">
             {curProduct.product_name ? (
-              <h2>{`${curProduct.product_name}-${curProduct.quantity}`}</h2>
+              <h1>{`${curProduct.product_name}-${curProduct.quantity}`}</h1>
             ) : (
-              <h2>{`${curProduct.brands_tags[0]}-${curProduct.quantity}`}</h2>
+              <h1>{`${curProduct.brands_tags[0]}-${curProduct.quantity}`}</h1>
             )}
-          </h1>
+          </div>
           <div className="row">
             <div className="product-page-1st-row">
               <p id="stores-info">
                 <strong>Stores: </strong>
 
-                {curProduct.stores}
+                {curProduct.stores.split(',').join(', ')}
               </p>
 
               <div className="four wide column">
@@ -224,7 +195,7 @@ export default function Item() {
                 </option>
                 {option.map((opt, index) => (
                   <option id="product-list-select" key={index} value={opt.grocery_list_id}>
-                    {opt.grocery_list_id}
+                    {opt.list_name}
                   </option>
                 ))}
               </select>
