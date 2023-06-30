@@ -1,5 +1,7 @@
 import running from "../media/home-run.png";
 import cherry from "../media/home-cherry.png";
+import nova from "../media/NOVA.png";
+
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import CurrentUserContext from "../contexts/current-user-context";
@@ -11,21 +13,21 @@ export default function HomePage() {
     <>
       <div className="home-1">
         <div id="home-first-left">
-
           <h1 className="moto-text">
             Lets make smarter and healthier food choices together!
           </h1>
-          {currentUser ? (false) : (
+          {currentUser ? (
+            false
+          ) : (
             <div>
-            <NavLink className="home-1-butt" to="/login" end={true}>
-              Login
-            </NavLink>
-            <NavLink className="home-1-butt" to="/sign-up" end={true}>
-              Sign Up
-            </NavLink>
-          </div>
-          )} 
-
+              <NavLink className="home-1-butt" to="/login" end={true}>
+                Login
+              </NavLink>
+              <NavLink className="home-1-butt" to="/sign-up" end={true}>
+                Sign Up
+              </NavLink>
+            </div>
+          )}
         </div>
 
         <div id="home-first-right">
@@ -77,6 +79,7 @@ export default function HomePage() {
             </ol>
           </div>
         </div>
+        <img id="nova-img" src={nova}></img>
       </div>
 
       <div div className="home-3">
@@ -86,7 +89,11 @@ export default function HomePage() {
 
         <div id="home-3-right">
           <h1 className="moto-text">
-            Lets make smarter and healthier food choices together!
+            iQFood is an app created in to assist
+            individuals who want to eat with more confidence! <br/>
+            <br/>
+            Our goal is to educate the public on the dangerous chemicals present in our food, identifying healthier
+            alternatives, and ultimately better diets.
           </h1>
         </div>
       </div>
