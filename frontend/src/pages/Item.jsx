@@ -183,9 +183,7 @@ export default function Item() {
               >
                 Go Back
               </button>
-              <select
-                className="button-hover"
-                id="product-page-select-option"
+              <select id="product-page-select-option"
                 value={selectedValue}
                 onChange={handleDropdownChange}
                 required

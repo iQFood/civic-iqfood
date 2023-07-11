@@ -95,8 +95,8 @@ export default function UserPage() {
           <CreateGroceryForm />
           <div id="userDash-head-user">
             <h1 id="userDash-user">{profileUsername}'s Dashboard</h1>
-            <p>If the user had any data, here it would be</p>
-            <p>Fake Bio or something</p>
+            <p>What do people write for a Bio?</p>
+            <p>Laura is my corporate Hero :)</p>
             {!!isCurrentUserProfile && (
               <button id="userDash-logout-button" className=" ui button"onClick={handleLogout}>Log Out</button>
             )}

@@ -212,7 +212,7 @@ nav a {
 
 .home-2{
   margin-top: 0px;
-  padding-top: 5rem;
+  padding: 10rem 0rem;
   /* height: 100%; */
   /* width: auto; */
   color: #fefee3;
@@ -227,6 +227,8 @@ nav a {
 
 .home-2-desc-text{
   text-align: center;
+  font-size: 25px;
+  /* margin: 3rem 0rem; */
 }
 
 #home-2-div{
@@ -243,7 +245,7 @@ nav a {
   /* width: 30%; */
   display:flex;
   flex-direction: column;
-  height: 50%;
+  /* height: 50%; */
   align-items: center;
   /* justify-content: spac; */
   /* margin-right: 3rem; */
@@ -262,7 +264,12 @@ nav a {
   margin-bottom: 5%;
 }
 
-
+#nova-img{
+  background-color: #fefee3;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width:50%;
+}
 
 
 
@@ -342,14 +349,37 @@ main{
 
 .user-form{
   margin-top: 200px;
-  background-image: url('./media/white.png');
+  background-color: #4c956c;
   background-size: cover;
-  border: 5px rgb(231, 203, 174) solid;
-  /* border-image: url('./media/black.png'); */
+  border: 5px #2C6E49 solid;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 150%;
+  width: 50%;
+  padding: 5rem 0rem;
+  height: auto;
+  color: #fefee3;
+}.user-form a:hover{
+  font-size: 120%;
+}.user-form a{
+  color:#f0f023;
+  /* font-size: 125%; */
+}
+
+.login-text{
+  font-size: 250%;
+  margin-bottom: 3rem;
+}
+
+.login-button{
+  padding: 1rem 2rem;
+    margin: 2rem;
+    /* background-color: #4d956d; */
+    color: #2C6E49;
+    border-radius: 15px;
+    font-size: 110%;
 }
 
 #login-suggest{
@@ -449,6 +479,7 @@ main{
   flex-direction: column;
   align-items: center;
   border: 0px;
+  margin-top: 7rem;
 }
 
 #search-food-area{
@@ -461,43 +492,55 @@ main{
 
 #search-text{
   color: #fefee3;
-  background-color: #2c6e49;
+  background-color: #4c956c;
   background-size: 200%;
   padding: 20px 200px;
   border-radius: 15px;
-  
+  font-size: 35px;
 }
 
 #search-food-box{
   display: flex;
   width: 100%;
   justify-content: space-around;
-  align-items: center
+  align-items: center;
+  margin-top:3rem;
+  margin-bottom:7rem;
 }
 
 #search-food-box input{
-  scale: 1.5;
-  border-color: grey;
+  /* scale: 1.5; */
+  font-size: 35px;
+  color: #4c956c;
+  border-color: #4c956c;
   border-radius: 5px;
   border-style: revert;
   margin: 0px;
+  margin-right: 2rem;
 }
 #search-food-box button{
   padding: 15px;
-  background-color: whitesmoke;
-  border-color: grey;
+  background-color: white;
+  border-color: #2C6E49;
+  color: #2C6E49;
   border-style: double;
   border-radius: 10px;
   font-family: 'Nunito', sans-serif;
-  font-size: 150%;
+  font-size: 30px;
 }
+
+#cards-div{
+  background-color: #4c956c;
+  padding: 5%;
+}
+
 .previousButton, .nextButton{
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
   background-color: white;
-  border-color: white;
+  border-color: rgb(230, 230, 230);
   border-radius: 10px;
   border-style: double;
   cursor: pointer;
@@ -530,7 +573,6 @@ main{
   margin: 5vh;
 }
 /* UserHome - END*/
-
 
 
 
@@ -597,7 +639,33 @@ main{
   flex-direction: column-reverse;
 }
 
+select {
+  /* font-size: 16px; */
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 8px;
+  border: 1px solid #ccc;
+  display: flex;
+}
 
+select option {
+  font-size: 30px;
+  /* align-self: center; */
+  padding: 10rem;
+  background-color: #f2f2f2;
+  color: #333;
+}select option:hover{
+
+}
+
+.collapse-btn{
+  color: white;
+  background-color: #4c956c;
+  padding: 1rem 0.1rem;
+  border-radius: 15px;
+  /* width: 50%; */
+  margin-bottom: 1rem;
+}
 
 
 
@@ -616,8 +684,9 @@ main{
   background-color: white ;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 25rem;
-  /* height:20rem; */
+  max-height:15rem;
   padding:20px;
   border-radius: 15px;
 }
@@ -627,7 +696,6 @@ main{
   display: flex;
   flex-direction: column;
   width: 25rem;
-  /* height:20rem; */
   padding:20px;
   border-radius: 15px;
   margin-bottom: 15px;
@@ -643,13 +711,13 @@ main{
 }
 
 #product-back-button{
-  background-color: rgb(112, 205, 182);
+  background-color: #70cdb6;
   width: auto;
   padding: 0rem 4rem;
 }#product-back-button:hover{
   scale: 1.2;
   background-color: rgb(79, 172, 148);
-  /* color: white; */
+  color: white;
 }
 
 #product-page-select-option{
@@ -680,6 +748,7 @@ main{
 }#product-add-button:hover{  
   scale: 1.2;
   background-color: #4f8e3b;
+  color: white;
 }
 
 
@@ -708,7 +777,8 @@ main{
   background-color: white;
   width: 100%;
   margin-top: 10px;
-
+  display: flex;
+  justify-content: center;
   /* border-style: none; */
 }
 #nutri-details{
@@ -748,15 +818,6 @@ main{
   align-items: baseline;
 }
 
-.previousButton{
-  background-image: url('./media/white.png');
-  background-size: 100%;
-}
-
-.nextButton{
-  background-image: url('./media/white.png');
-  background-size: 100%;
-}
 
 
 
@@ -1095,3 +1156,21 @@ padding-top: 35px;
 
 
 /* ABOUT US PAGE - END */
+
+
+
+/* LOAD PAGE - START*/
+
+#load-page{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: red ; */
+  height: 100%;
+  margin-top: 7%;
+}
+
+#load-page-img{
+  width: 20%;
+}

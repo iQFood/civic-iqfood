@@ -44,7 +44,7 @@ export default function SignUpPage() {
           onSubmit={handleSubmit}
           onChange={handleChange}
         >
-          <h1>Sign Up</h1>
+          <h1 className="login-text">Sign Up</h1>
           <label htmlFor="username">Username</label>
           <input
             autoComplete="off"
@@ -70,7 +70,7 @@ export default function SignUpPage() {
         <input autoComplete="off" type="password" id="password-confirm" name="passwordConfirm" />
       */}
 
-          <button>Sign Up!</button>
+          <button className="login-button">Sign Up!</button>
           <p id="login-suggest">
             Already have an account with us? <Link to="/login">Log in!</Link>
           </p>

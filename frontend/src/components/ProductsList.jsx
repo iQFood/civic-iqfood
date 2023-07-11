@@ -14,8 +14,8 @@ export default function ProductsList() {
   if (loading) return <LoadingPage />;
 
   return (
-    <>
-      <div className="ui centered cards">
+    <div div id="cards-div">
+      <div  className="ui centered cards">
         {products.map((product) => {
           return <ProductCard key={product._id} item={product} />;
         })}
@@ -30,6 +30,6 @@ export default function ProductsList() {
           Next
         </button>
       </div>
-    </>
+    </div>
   );
 }

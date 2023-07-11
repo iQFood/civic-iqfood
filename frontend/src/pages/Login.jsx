@@ -26,7 +26,7 @@ export default function LoginPage() {
     <>
       <div className="sign-bg">
         <form className="user-form" onSubmit={handleSubmit}>
-          <h1>Login</h1>
+          <h1 className="login-text">Login</h1>
           <label htmlFor="username">Username</label>
           <input
             type="text"
@@ -43,7 +43,7 @@ export default function LoginPage() {
             name="password"
           />
 
-          <button>Log in!</button>
+          <button className="login-button">Log in!</button>
         </form>
         {!!errorText && <p>{errorText}</p>}
       </div>
